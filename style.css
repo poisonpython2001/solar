@@ -1,0 +1,511 @@
+/* CSS Reset */
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+  
+ol, ul {
+    list-style: none;
+}
+  
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Container */
+
+.container {
+    margin: auto;
+    box-sizing: border-box;
+    width: 80%;
+}
+
+/* ------ HEADER ------ */
+
+.header {
+    background-image: url("./img/header-bg.jpg");
+    height: 900px;
+    width: 100%;
+}
+
+.home-logo-image {
+    padding-top: 76px;
+    display: flex;
+    justify-content: center;
+}
+
+.home-subtitle-large {
+    display: flex;
+    justify-content: center;
+    margin-top: 286px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 64px;
+}
+
+.home-subtitle-medium {
+    display: flex;
+    justify-content: center;
+    padding-top: 3px;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.home-subtitle-small {
+    margin-top: -180px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 18px;
+}
+
+.home-reg-button {
+    margin-top: 280px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 18px;
+}
+
+.home-reg-btn {
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.home-reg-btn:hover {
+    background-color: #A9A32A;
+    border: 1px solid white;
+}
+
+.home-social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    gap: 20px;
+}
+
+/* ------ SERVICE ------ */
+
+.service {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.service-block {
+    display: flex;
+    justify-content: center;
+    gap: 89px;
+}
+
+.service-left-text {
+    width: 510px;
+}
+
+.service-title {
+    display: flex;
+    justify-content: center;
+    color: #868585;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+
+.service-left-text-title {
+    padding-top: 50px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.service-left-text-subtitle {
+    padding-top: 15px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.service-right-image {
+    padding-top: 50px;
+}
+
+/* ------ GREEN TARIFF ------ */
+
+.green-tariff {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.green-tariff-blocks {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin-top: 60px;
+}
+
+.green-tariff-title {
+    display: flex;
+    justify-content: center;
+    color: #868585;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.green-tariff-sections-buttons {
+    display: flex;
+    gap: 40px;
+}
+
+.section-button {
+    text-decoration: none;
+    color: #303030;
+    transition: .2s;
+    position: relative;
+}
+
+.section-button::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #303030;
+    transition: all 0.3s ease-in-out;
+}
+
+.section-button:hover::before {
+    width: 100%;
+}
+
+.green-tariff-sale-section {
+    margin-top: 125px;
+    display: flex;
+    gap: 40px;
+}
+
+.sale-section-subtitle {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #303030;
+    width: 235px;
+}
+
+.green-tariff-conditions {
+    margin-top: 100px;
+    display: flex;
+    gap: 40px;
+}
+
+.conditions-left-text-title {
+    margin-top: 16px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #303030;
+}
+
+.conditions-left-text-subtitle {
+    margin-top: 5px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #303030;
+    width: 235px;
+}
+
+.conditions-right-text-title {
+    margin-top: 16px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #303030;
+}
+
+.conditions-right-text-subtitle {
+    margin-top: 5px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #303030;
+    width: 235px;
+}
+
+.green-tariff-right-about-subtitle {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #303030;
+    width: 600px;
+}
+
+.green-tariff-right-img {
+    margin-top: 17px;
+}
+
+/* ------ TRANSFER ------ */
+
+.transfer {
+    margin-top: 150px;
+    height: 500px;
+    background-image: url("./img/transfer-bg.jpg");
+    width: 100%;
+}
+
+.transfer-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding-top: 128px;
+    width: 673px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: normal;
+    font-size: 42px;
+    color: #ffffff;
+}
+
+/* ------ CLIENTS ------ */
+
+.clients {
+    margin-top: 150px;
+}
+
+.clients-title {
+    display: flex;
+    justify-content: center;
+    color: #868585;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.clients-block {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 141px;
+}
+
+.clients-right-text-title {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #303030;
+    margin-bottom: 30px;
+}
+
+.clients-right-text-subtitle {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #303030;
+    margin-top: 15px;
+}
+
+.clients-right-button {
+    margin-top: 100px;
+}
+
+.clients-btn {
+    text-decoration: none;
+    color: black;
+    padding: 10px 25px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.clients-btn:hover {
+    background-color: #A9A32A;
+    border: 1px solid black;
+}
+
+/* ------ STEPS ------ */
+
+.steps {
+    margin-top: 150px;
+}
+
+.steps-block {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+}
+
+.steps-block-left-big-title {
+    display: flex;
+    justify-content: start;
+    color: #868585;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    width: 324px;
+}
+
+.steps-block-left-title {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #303030;
+    margin-top: 60px;
+    width: 510px;
+}
+
+.steps-block-left-subtitle {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #303030;
+    margin-top: 2px;
+    width: 510px;
+}
+
+/* ------ FOOTER ------ */
+
+.footer {
+    margin-top: 150px;
+    background-image: url("./img/footer-bg.jpg");
+    height: 730px;
+    width: 100%;
+}
+
+.footer-block {
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+}
+
+/* Left */
+
+.footer-left-title {
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.footer-contact-form {
+    margin-top: 60px;
+}
+
+.footer-contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 510px;
+}
+
+.footer-contact-form input {
+    margin-top: 60px;
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: normal;
+    outline: none;
+}
+
+.line {
+    height: 1px;
+    background-color: #fff;
+    width: 510px;
+}
+
+.footer-contact-form button[type="submit"] {
+    margin-top: 60px;
+    font-size: 18px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: normal;
+    width: 200px;
+    color: #fff;
+    padding: 10px 25px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .4s;
+
+}
+
+.footer-contact-form button[type="submit"]:hover {
+    background-color: #A9A32A;
+}
+
+/* Right */
+
+.footer-right-title {
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 60px;
+}
+
+.footer-right-subtitle {
+    margin-top: 30px;
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* Finish */
+
+.footer-finish-block {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+.footer-finish-text {
+    margin-top: 20px;
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.footer-finish-text:hover {
+    color: #A9A32A;
+}
+
+.footer-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
